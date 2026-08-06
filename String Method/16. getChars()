@@ -1,0 +1,10 @@
+public class Main {
+    public static void main(String[] args) {
+        String s = "Java";
+        char[] ch = new char[4];
+
+        s.getChars(0, 4, ch, 0);
+
+        System.out.println(ch);
+    }
+}

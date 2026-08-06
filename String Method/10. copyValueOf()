@@ -1,0 +1,6 @@
+public class Main {
+    public static void main(String[] args) {
+        char[] ch = {'J','a','v','a'};
+        System.out.println(String.copyValueOf(ch));
+    }
+}
