@@ -1,0 +1,40 @@
+class Node {
+    int data;
+    Node next;
+
+    Node(int data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+
+class Main {
+
+    public static void main(String[] args) {
+
+        // Creating nodes
+        Node head = new Node(10);
+        head.next = new Node(20);
+        head.next.next = new Node(30);
+
+        System.out.println("Before Deletion:");
+        display(head);
+
+        // Delete Head Node
+        head = head.next;
+
+        System.out.println("After Deleting Head:");
+        display(head);
+    }
+
+    static void display(Node head) {
+        Node temp = head;
+
+        while (temp != null) {
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        }
+
+        System.out.println();
+    }
+}
